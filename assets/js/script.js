@@ -4,6 +4,17 @@ let matched = 0;
 let cardOne, cardTwo;
 let disableDeck = false;
 
+function comecarJogo() {
+const nome = document.getElementById("nome").value.trim();
+if (nome === "") {
+alert("Digite seu nome para jogar!");
+return;
+}
+document.getElementById("telaInicio").style.display = "none";
+document.getElementById("telaJogo").style.display = "block";
+document.getElementById("saudacao").textContent = "Boa sorte, " + nome + "!";
+}
+
 function flipCard({target: clickedCard}) {
     if(cardOne !== clickedCard && !disableDeck) {
         clickedCard.classList.add("flip");
