@@ -10,18 +10,8 @@
     <label for="nome">Seu nome:</label>
 <input type="text" id="nome" placeholder="Digite seu nome" maxlength="15">
 <button onclick="comecarJogo()">Jogar</button>
-    function comecarJogo() {
-  const nome = document.getElementById("nome").value.trim();
+    
 
-  if (nome === "") {
-    alert("Digite seu nome para jogar!");
-    return;
-  }
-
-  document.getElementById("telaInicio").style.display = "none";
-  document.getElementById("telaJogo").style.display = "block";
-  document.getElementById("saudacao").textContent = "Boa sorte, " + nome + "!";
-}
     <div class="wrapper">
       <ul class="cards">
         <li class="card">
